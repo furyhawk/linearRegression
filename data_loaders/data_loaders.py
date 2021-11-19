@@ -22,9 +22,9 @@ class Regression(BaseDataLoader):
 
         X, y = load_boston(return_X_y=True)
         X_train, X_test, y_train, y_test = train_test_split(X, y,
-                                                            test_size=0.2,
-                                                            random_state=1,
-                                                            shuffle=True)
+                                                            test_size=test_split,
+                                                            random_state=random_state,
+                                                            shuffle=shuffle)
 
         data_handler.X_data = X_train
         data_handler.y_data = y_train

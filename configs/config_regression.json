@@ -43,10 +43,10 @@
         "type": "Regression",
         "args":{
             "data_path": "data/path-to-file",
-            "shuffle": false,
-            "test_split": 0.0,
+            "shuffle": true,
+            "test_split": 0.1,
             "stratify": false,
-            "random_state":1
+            "random_state":42
         }
     },
 
